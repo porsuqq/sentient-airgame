@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentient Game</title>
+    <link rel="stylesheet" href="stil.css">
+</head>
+<body>
+    <div class="game-container">
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+        <div class="score-board-left">
+            <div class="timer"><span id="timer">00:00:00</span></div>
+        </div>
+        <div class="score-board-right">
+            <div class="score">Score: <span id="score">0</span></div>
+            <div class="bullets">Bullets: <span id="bullets">10</span></div>
+        </div>
+        <img id="soundIcon" src="assets/sesli.png" alt="Sound Control" onclick="toggleSound()">
+        <div id="gameOver" class="game-over hidden">
+            <h2>Game Over!</h2>
+            <p>Score: <span id="finalScore">0</span></p>
+            <p>Time: <span id="finalTime">00:00:00</span></p>
+            <button onclick="restartGame()">START</button>
+        </div>
+        <div id="startScreen" class="start-screen">
+            <button id="startButton">START</button>
+        </div>
+    </div>
+    <script src="oyun.js"></script>
+</body>
+</html>

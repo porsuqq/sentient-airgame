@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+.start-screen {
+    text-align: center;
+    color: white;
+}
+
+.start-screen h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.start-screen button, #startButton {
+    padding: 10px 20px;
+    font-size: 24px;
+    cursor: pointer;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.start-screen button:hover, #startButton:hover {
+    background: #45a049;
+}
+
+.game-container {
+    position: relative;
+    width: 800px;
+    height: 600px;
+}
+
+#gameCanvas {
+    border: 2px solid white;
+    background: url('assets/arka.png') repeat-y;
+    background-size: 100% auto;
+    display: block;
+}
+
+.score-board-left {
+    position: absolute;
+    top: 60px;
+    left: 10px;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
+    z-index: 10;
+}
+
+.score-board-right {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: right;
+    z-index: 10;
+}
+
+.score, .timer, .bullets {
+    margin-bottom: 5px;
+}
+
+#soundIcon {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.game-over {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 10;
+}
+
+.game-over h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.game-over p {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.game-over button {
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.game-over button:hover {
+    background: #45a049;
+}
+
+.hidden {
+    display: none;
+}
+
+#startScreen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
